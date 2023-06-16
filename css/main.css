@@ -1,0 +1,55 @@
+/*RESET*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*BODY*/
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  /*HEADER*/
+  /*MAIN*/
+  /*FOOTER*/ }
+  body header {
+    height: 6.4%;
+    width: 100%;
+    background-color: gray; }
+  body main {
+    height: 85%;
+    width: 100%;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "index-main-div1" "index-main-div2" "index-main-div3"; }
+    body main .index-main-div1 {
+      border-bottom: 2px groove black;
+      border-bottom-right-radius: 50%;
+      height: fit-content;
+      width: 100%;
+      background-color: tomato;
+      grid-area: index-main-div1; }
+      body main .index-main-div1 h1 {
+        margin: 0.5% 0 0 0;
+        text-align: center; }
+      body main .index-main-div1 p {
+        padding: 0.5% 0 0 1%;
+        width: 80%; }
+    body main .index-main-div2 {
+      width: 80%;
+      background-color: green;
+      grid-area: index-main-div2; }
+    body main .index-main-div3 {
+      width: 80%;
+      background-color: yellow;
+      grid-area: index-main-div3; }
+  body footer {
+    position: absolute;
+    bottom: 0px;
+    height: 5%;
+    width: 100%;
+    background-color: red; }
