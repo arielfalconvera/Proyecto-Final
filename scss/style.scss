@@ -5,24 +5,40 @@
     box-sizing: border-box;
 }
 
-/*BODY*/
+//BODY
+
 body{
     height: 100vh;
     width: 100%;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    /*HEADER*/
+    //HEADER
     header{
-        height: 6.4%;
+        height: 6.5%;
         width: 100%;
-        background-color: gray;
+        background-color:#858585;
+        nav{
+            div{
+                div{
+                    justify-content:end;
+                    div{
+                        .boton:hover{
+                            color: white;
+                            transition: .5s;
+                            border: 1px solid black;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
     }
-    /*MAIN*/
+    //MAIN
     main{
         height: 85%;
         width: 100%;
-        background-color: blue;
+        background-image: linear-gradient(#858585, whitesmoke);
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
@@ -36,7 +52,7 @@ body{
             border-bottom-right-radius: 50%;
             height: fit-content;
             width: 100%;
-            background-color: tomato;
+            background-image: linear-gradient(#858585, whitesmoke);
             grid-area: index-main-div1;
             h1{
                 margin: 0.5% 0 0 0;
@@ -48,6 +64,8 @@ body{
             }
         }
         .index-main-div2{
+            position:relative;
+            right: 0px;
             width: 80%;
             background-color: green;
             grid-area: index-main-div2;
@@ -58,7 +76,7 @@ body{
             grid-area: index-main-div3;
         }
     }
-    /*FOOTER*/
+    //FOOTER
     footer{
         position: absolute;
         bottom: 0px;
